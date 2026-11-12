@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Picora Privacy Policy</title>
-  <meta name="description" content="Privacy policy for Picora — a fully offline local-first photo collage maker for Android." />
+  <title>Privacy Policy - Picora</title>
+  <meta name="description" content="Privacy Policy for Picora — a fully offline, local-first photo collage maker for Android." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600&display=swap" rel="stylesheet" />
@@ -30,7 +30,7 @@
       min-height: 100vh;
       color: var(--ink);
       font-family: "Inter", system-ui, sans-serif;
-      line-height: 1.65;
+      line-height: 1.7;
       background:
         radial-gradient(1200px 500px at 10% -10%, var(--bg-accent), transparent 55%),
         radial-gradient(900px 420px at 100% 0%, #fdeef1, transparent 50%),
@@ -85,53 +85,35 @@
       color: var(--muted);
       font-size: 0.92rem;
     }
-    .lang {
-      display: inline-flex;
-      padding: 0.25rem;
-      margin: 1.25rem 0 0;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(255,255,255,0.8);
-      backdrop-filter: blur(6px);
-    }
-    .lang button {
-      border: 0;
-      background: transparent;
-      color: var(--muted);
-      font: inherit;
-      font-weight: 500;
-      padding: 0.45rem 0.95rem;
-      border-radius: 999px;
-      cursor: pointer;
-    }
-    .lang button[aria-pressed="true"] {
-      background: var(--accent);
-      color: #fff;
-    }
     .card {
       margin-top: 1.5rem;
       background: var(--card);
       border: 1px solid rgba(232, 234, 238, 0.9);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: clamp(1.25rem, 3vw, 2rem);
+      padding: clamp(1.5rem, 3.5vw, 2.5rem);
     }
-    .panel[hidden] { display: none; }
     h2 {
       font-family: "Sora", Georgia, serif;
-      font-size: 1.25rem;
-      margin: 1.75rem 0 0.65rem;
+      font-size: 1.2rem;
+      margin: 2.25rem 0 0.75rem;
       font-weight: 600;
+      scroll-margin-top: 1.5rem;
     }
     h2:first-child { margin-top: 0; }
-    p, li { color: var(--ink); }
-    ul { padding-left: 1.2rem; }
+    h3 {
+      font-size: 1.02rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.5rem;
+    }
+    p { margin: 0 0 0.9rem; }
+    ul { padding-left: 1.2rem; margin: 0 0 0.9rem; }
     li + li { margin-top: 0.35rem; }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin: 0.75rem 0 0.25rem;
-      font-size: 0.95rem;
+      margin: 0.75rem 0 1rem;
+      font-size: 0.93rem;
     }
     th, td {
       border-top: 1px solid var(--line);
@@ -142,16 +124,17 @@
     th {
       color: var(--muted);
       font-weight: 600;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
     .callout {
-      margin: 1rem 0 0;
-      padding: 0.95rem 1rem;
+      margin: 0 0 1.75rem;
+      padding: 1rem 1.15rem;
       border-radius: 12px;
       background: var(--accent-soft);
       border: 1px solid #ffc9d5;
+      font-size: 0.97rem;
     }
     .callout strong { color: var(--accent-deep); }
     a { color: var(--accent); }
@@ -181,89 +164,121 @@
 <body>
   <div class="wrap">
     <header>
-      <a class="brand" href="https://github.com/Winstonokk" rel="noopener">
+      <a class="brand" href="https://winstonokk.github.io/Picora_Privacy/" rel="noopener">
         <span class="brand-mark" aria-hidden="true">P</span>
         <span>Picora</span>
       </a>
-      <h1 data-i18n="title">Privacy Policy</h1>
-      <p class="lede" data-i18n="lede">
-        Picora is a fully offline, local-first photo collage maker for Android. Your photos stay on your device. No account. No ads.
+      <h1>Privacy Policy</h1>
+      <p class="lede">
+        This Privacy Policy describes how Picora handles your information when you use our Android application, and outlines the rights and choices available to you.
       </p>
       <div class="meta">
-        <span data-i18n="updated">Last updated: 12 November 2026 (v1.1 — added Firebase Analytics &amp; AdMob disclosure)</span>
+        <span>Last updated: 12 November 2026</span>
         <span>·</span>
-        <span data-i18n="product">Product: Picora for Android</span>
+        <span>Product: Picora for Android</span>
+        <span>·</span>
+        <span>Developer: Winstonokk</span>
       </div>
     </header>
 
     <main class="card">
-      <section id="panel-en" class="panel">
-        <div class="callout">
-          <strong>Local-first by design:</strong>
-          Your photos and collages are processed entirely on your device and are never uploaded by us. The App uses Google Analytics for Firebase (anonymous usage statistics) and Google AdMob (advertising) — never photo content or any data that identifies you personally.
-        </div>
+      <div class="callout">
+        <strong>Summary:</strong> Your photos and collages are processed entirely on your device and are never uploaded by us. The App collects only anonymous usage statistics (Google Analytics for Firebase) and serves advertising (Google AdMob). We never collect the content of your photos or collages.
+      </div>
 
-        <h2>1. Information We Collect</h2>
-        <p>Picora has no user accounts, no sign-in, and no server-side storage. Everything you create stays on your device. The only data leaving your device is anonymous usage analytics described in §3.</p>
+      <h2 id="introduction">1. Introduction</h2>
+      <p>We respect your privacy and are committed to protecting your personal data. This Privacy Policy ("Policy") describes how Picora ("we", "us", or "our") collects, uses, and shares information in connection with the Picora Android application (the "App") and explains the rights and choices available to you.</p>
+      <p>By downloading, accessing, or using the App, you agree to the collection and use of information in accordance with this Policy. If you do not agree with this Policy, please do not use the App.</p>
 
-        <h3>Photos you select</h3>
-        <ul>
-          <li>The App requests read access to your device photo library so you can pick photos to include in a collage.</li>
-          <li>Photos you choose are processed entirely on your device and are never uploaded anywhere.</li>
-          <li>We do not access or use any photo you have not explicitly selected.</li>
-        </ul>
+      <h2 id="collection">2. Collection of Information and Processing Purposes</h2>
 
-        <h3>Collages you create</h3>
-        <ul>
-          <li>Exported collages are saved to your device gallery (<code>Pictures/Picora</code>) via the system MediaStore.</li>
-          <li>They remain on your device; we have no access to them.</li>
-        </ul>
+      <h3>2.1 Information Processed Entirely on Your Device</h3>
+      <p>The core functionality of Picora is processing photos locally. The following data is accessed and processed on your device only, and is never transmitted to us or to any third party:</p>
+      <ul>
+        <li><strong>Photos you select</strong> from your device library to include in a collage. They are read solely for the purpose of composing the collage you request.</li>
+        <li><strong>Collages you create</strong> and export. Exported images are saved to your device gallery via the system MediaStore (<code>Pictures/Picora</code>).</li>
+        <li><strong>Photos taken with the camera</strong> through the App's picker. They are stored in local cache and placed into your collage.</li>
+        <li><strong>App preferences</strong> (e.g., selected language) stored locally via Android DataStore/SharedPreferences.</li>
+      </ul>
+      <p>We do not access, read, or use any photo you have not explicitly selected, and we do not create copies of your library.</p>
 
-        <h2>2. Permissions</h2>
-        <table>
-          <thead>
-            <tr><th>Permission</th><th>Purpose</th></tr>
-          </thead>
-          <tbody>
-            <tr><td data-label="Permission">READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE</td><td data-label="Purpose">Display your photo library inside the in-app picker so you can choose photos.</td></tr>
-            <tr><td data-label="Permission">INTERNET</td><td data-label="Purpose">Reserved for future features. The current version makes no network requests.</td></tr>
-            <tr><td data-label="Permission">CAMERA (optional)</td><td data-label="Purpose">Take a new photo from the picker's Camera tab, if you choose.</td></tr>
-          </tbody>
-        </table>
+      <h3>2.2 Information Collected Automatically (Usage Data)</h3>
+      <p>The App integrates <strong>Google Analytics for Firebase</strong> (Google LLC) to collect anonymous usage statistics that help us understand which features are used and to detect crashes. This includes:</p>
+      <ul>
+        <li>Anonymous app-instance identifiers;</li>
+        <li>Screen views (home, editor, settings) and aggregated in-app events (template selected, layout switched, tool used, photos picked, export saved, rewarded ad shown);</li>
+        <li>Device model, OS version, locale, and approximate device configuration;</li>
+        <li>Crash and diagnostic reports.</li>
+      </ul>
+      <p>This data does not include the content of your photos or collages, file names, or any information that directly identifies you. Analytics is configured without ad personalization signals.</p>
 
-        <h2>3. Third-Party Services</h2>
-        <p>Picora integrates two Google services (Google LLC) to keep the App free:</p>
-        <ul>
-          <li><strong>Google Analytics for Firebase</strong> — anonymous usage statistics: app-instance IDs, screen views (home / editor / settings), aggregated events (template selected, export saved, tool used) and crash reports. Photo/collage content is never collected. Analytics is configured without ad personalization signals.</li>
-          <li><strong>Google AdMob</strong> — serves Banner ads (home, editor) and optional Rewarded ads (remove watermark on export). AdMob may use device identifiers such as the advertising ID to serve and measure ads, including personalized ads where you consent via Google's consent prompt.</li>
-        </ul>
-        <p>Data from these services is processed by Google per the <a href="https://firebase.google.com/support/privacy">Firebase Privacy &amp; Security</a> and <a href="https://policies.google.com/technologies/ads">Google Ads policies</a>. You can reset your advertising ID or opt out of ad personalization in Android Settings → Google → Ads.</p>
+      <h3>2.3 Advertising Data</h3>
+      <p>The App integrates <strong>Google AdMob</strong> (Google LLC) to serve Banner advertisements on the home and editor screens and optional Rewarded video advertisements (e.g., to remove the watermark on export). AdMob may process device identifiers — including the Google advertising ID — device information, and approximate location data (derived from IP address) to serve and measure advertisements. Where you consent through Google's consent prompt, advertising may be personalized; you may withdraw consent or reset your advertising ID at any time (see Section 8).</p>
 
-        <h2>4. Children's Privacy</h2>
-        <p>Picora does not knowingly collect any personal information from anyone, including children under 13. Because no data is collected at all, the App is compliant with children's privacy regulations (COPPA, GDPR-K).</p>
+      <h2 id="permissions">3. Permissions</h2>
+      <table>
+        <thead>
+          <tr><th>Permission</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr><td data-label="Permission">READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE</td><td data-label="Purpose">Display your device photo library inside the in-app picker so you can choose photos for a collage.</td></tr>
+          <tr><td data-label="Permission">INTERNET</td><td data-label="Purpose">Serving advertisements and transmitting anonymous analytics (Sections 2.2–2.3).</td></tr>
+          <tr><td data-label="Permission">CAMERA (optional)</td><td data-label="Purpose">Take a new photo from the picker's Camera tab, if you choose.</td></tr>
+        </tbody>
+      </table>
+      <p>You can revoke any permission at any time in Android Settings → Apps → Picora → Permissions. The App will display a permission guide and remains usable, except that picking existing photos requires photo access.</p>
 
-        <h2>5. Data Storage &amp; Retention</h2>
-        <p>All data (selected photos, exported collages, preferences) lives only on your device. Uninstalling the App removes its preferences; collages you exported remain in your gallery unless you delete them.</p>
+      <h2 id="sharing">4. Sharing of Information</h2>
+      <p>We do not sell, rent, or trade your personal information. Information is shared only with the following service providers, solely as described in this Policy:</p>
+      <ul>
+        <li><strong>Google LLC</strong> — Google Analytics for Firebase (usage statistics, crash reporting) and Google AdMob (advertising). Data is processed by Google per the <a href="https://firebase.google.com/support/privacy">Firebase Privacy &amp; Security</a> and <a href="https://policies.google.com/technologies/ads">Google Ads policies</a>.</li>
+        <li><strong>Google Play</strong> — when you use the in-app review prompt or open the store listing, Google Play processes the interaction under its own terms.</li>
+      </ul>
+      <p>We may also disclose information if required by law, regulation, or valid legal process.</p>
 
-        <h2>6. Your Rights &amp; Choices</h2>
-        <ul>
-          <li>Revoke photo access anytime in Android Settings → Apps → Picora → Permissions. The App shows a permission guide and stays usable.</li>
-          <li>Delete exported collages from your gallery app at any time.</li>
-        </ul>
+      <h2 id="storage">5. Storage of Information</h2>
+      <p>Photos, collages, and app preferences are stored locally on your device. Anonymous analytics and advertising data are stored and processed by Google on servers that may be located outside your country of residence, in accordance with Google's certifications under the EU–US and Swiss–US Data Privacy Frameworks.</p>
+      <p>Uninstalling the App removes its local preferences. Collages you exported remain in your device gallery unless you delete them.</p>
 
-        <h2>7. Changes to This Policy</h2>
-        <p>The "Last updated" date above reflects the current version. Material changes will be highlighted in the App's release notes on Google Play.</p>
+      <h2 id="security">6. Security Measures</h2>
+      <p>We take reasonable technical and organizational measures to protect your information, including processing photos in local memory only, transmitting analytics over encrypted connections (TLS), requesting runtime permissions rather than broad access, and integrating third-party services in read-only, minimal-disclosure configurations.</p>
 
-        <h2>8. Contact</h2>
-        <p>Developer: Winstonokk · <a href="mailto:wangfengkxhp@gmail.com">wangfengkxhp@gmail.com</a></p>
-      </section>
+      <h2 id="children">7. Children's Privacy</h2>
+      <p>The App does not knowingly collect personal information from anyone, including children under the age of 13 (or the higher minimum age required by your local law). Because the App processes photos only locally and collects only anonymous statistics, it is designed to be compliant with children's privacy regulations, including COPPA and GDPR-K.</p>
+      <p>If you believe a child has provided personal information through the App, please contact us and we will take appropriate action.</p>
 
+      <h2 id="gdpr">8. Your Rights (GDPR and Other Regions)</h2>
+      <p>Depending on your jurisdiction (including the EU/EEA under GDPR, the UK, and California under CCPA/CPRA), you may have the following rights with respect to personal data processed about you:</p>
+      <ul>
+        <li>Right of access and information about the data processed;</li>
+        <li>Right to rectification of inaccurate data;</li>
+        <li>Right to erasure ("right to be forgotten");</li>
+        <li>Right to restrict or object to processing;</li>
+        <li>Right to data portability;</li>
+        <li>Right to withdraw consent at any time (without affecting the lawfulness of prior processing);</li>
+        <li>Right not to be discriminated against for exercising your rights (California).</li>
+      </ul>
+      <p>Because Picora processes no information that directly identifies you, most requests will relate to the anonymous analytics and advertising identifiers described above. To exercise these rights, contact us at <a href="mailto:wangfengkxhp@gmail.com">wangfengkxhp@gmail.com</a>. You may also:</p>
+      <ul>
+        <li>Reset or delete your advertising ID in Android Settings → Google → Ads;</li>
+        <li>Opt out of ad personalization in the same location;</li>
+        <li>Request deletion of your Firebase app-instance data via Google's <a href="https://support.google.com/analytics/answer/9052221">user deletion tools</a>;</li>
+        <li>Uninstall the App, which removes all locally stored preferences.</li>
+      </ul>
+      <p>California residents may additionally learn more about ad personalization and opt-out choices at <a href="https://support.google.com/ads/answer/2662922">Google's ad settings page</a>. We do not "sell" or "share" personal information as defined by the CCPA/CPRA.</p>
+
+      <h2 id="updates">9. Updates to This Privacy Policy</h2>
+      <p>We may update this Policy from time to time to reflect changes in the App, applicable law, or our service providers. The "Last updated" date at the top of this Policy indicates when it was last revised. Material changes will be highlighted in the App's release notes on Google Play before the updated version takes effect.</p>
+
+      <h2 id="contact">10. Contact</h2>
+      <p>If you have any questions, concerns, or requests regarding this Policy or the App's data practices, please contact us at:</p>
+      <p><strong>Developer:</strong> Winstonokk<br />
+      <strong>Email:</strong> <a href="mailto:wangfengkxhp@gmail.com">wangfengkxhp@gmail.com</a></p>
     </main>
 
     <footer>
       © 2026 Winstonokk · Picora
     </footer>
   </div>
-
 </body>
 </html>
