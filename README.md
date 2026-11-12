@@ -6,7 +6,7 @@ Picora ("we", "our", or "the App") is a photo collage maker developed for Androi
 
 ## 1. Information We Collect
 
-**Picora does not collect, store, or transmit any personal information to our servers.** The App has no backend, no analytics SDK, and no advertising SDK integrated at this time.
+**Your photos and collages never leave your device.** Picora collects only anonymous usage statistics via Google Analytics for Firebase (feature usage, screen views, crashes) — never photo content or personally identifiable data. See the full policy at https://winstonokk.github.io/Picora_Privacy/
 
 ### 1.1 Photos You Select
 
@@ -33,9 +33,7 @@ Picora ("we", "our", or "the App") is a photo collage maker developed for Androi
 
 ## 3. Third-Party Services
 
-The current released version of Picora contains **no third-party SDKs** (no ads, no analytics, no crash reporting).
-
-If future versions introduce advertising or analytics services, this policy will be updated **before** that version is released, and the App's listing on Google Play will disclose which services are used and what data they process.
+The App integrates **Google Analytics for Firebase** (Google LLC) for anonymous usage statistics: app-instance IDs, screen views, aggregated feature events, and crash reports. Photo/collage content is never collected. No advertising SDK is present. See details in the live policy page.
 
 ## 4. Children's Privacy
 

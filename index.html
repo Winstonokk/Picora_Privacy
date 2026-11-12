@@ -190,7 +190,7 @@
         Picora is a fully offline, local-first photo collage maker for Android. Your photos stay on your device. No account. No ads.
       </p>
       <div class="meta">
-        <span data-i18n="updated">Last updated: 12 November 2026</span>
+        <span data-i18n="updated">Last updated: 12 November 2026 (v1.1 — added Firebase Analytics disclosure) — added Firebase Analytics disclosure)</span>
         <span>·</span>
         <span data-i18n="product">Product: Picora for Android</span>
       </div>
@@ -204,11 +204,11 @@
       <section id="panel-en" class="panel">
         <div class="callout">
           <strong>Local-first by design:</strong>
-          Picora does not collect, store, or transmit any personal information to our servers. There is no backend, no analytics SDK, and no advertising SDK in the current release.
+          Your photos and collages are processed entirely on your device and are never uploaded by us. Picora uses Google Analytics for Firebase solely to collect anonymous usage statistics (feature usage, screen views, crashes) — never photo content or any data that identifies you personally.
         </div>
 
         <h2>1. Information We Collect</h2>
-        <p>None. Picora has no user accounts, no sign-in, and no server-side storage. Everything you create stays on your device.</p>
+        <p>Picora has no user accounts, no sign-in, and no server-side storage. Everything you create stays on your device. The only data leaving your device is anonymous usage analytics described in §3.</p>
 
         <h3>Photos you select</h3>
         <ul>
@@ -235,8 +235,14 @@
           </tbody>
         </table>
 
-        <h2>3. Third-Party Services</h2>
-        <p>The current released version of Picora contains no third-party SDKs — no ads, no analytics, no crash reporting. If future versions introduce such services, this policy will be updated before that version is released.</p>
+        <h2>3. Third-Party Services — Google Analytics for Firebase</h2>
+        <p>Picora integrates <strong>Google Analytics for Firebase</strong> (Google LLC) to understand which features are used, so development effort goes where it matters.</p>
+        <ul>
+          <li><strong>What is collected:</strong> anonymous app-instance IDs, screen views (home / editor / settings), aggregated events (template selected, export saved, tool used) and crash reports.</li>
+          <li><strong>What is NOT collected:</strong> photo or collage content, file names, account information, or advertising identifiers used for ads.</li>
+          <li><strong>Data location:</strong> processed by Google per the <a href="https://firebase.google.com/support/privacy">Firebase Privacy &amp; Security</a> terms.</li>
+          <li><strong>No advertising:</strong> Analytics is configured without ad personalization signals; no advertising SDK is present.</li>
+        </ul>
 
         <h2>4. Children's Privacy</h2>
         <p>Picora does not knowingly collect any personal information from anyone, including children under 13. Because no data is collected at all, the App is compliant with children's privacy regulations (COPPA, GDPR-K).</p>
@@ -260,11 +266,11 @@
       <section id="panel-zh" class="panel" hidden>
         <div class="callout">
           <strong>本地优先设计：</strong>
-          Picora 不收集、不存储、也不向我们的服务器传输任何个人信息。当前版本没有后端服务、没有统计 SDK、也没有广告 SDK。
+          你的照片与拼图作品完全在设备上处理，我们不会上传它们。Picora 仅使用 Google Analytics for Firebase 收集匿名的使用统计（功能使用、页面浏览、崩溃报告）——绝不包含照片内容或任何可识别你个人身份的数据。
         </div>
 
         <h2>1. 我们收集的信息</h2>
-        <p>无。Picora 没有用户账号、没有登录、没有服务器端存储。你创作的一切都保存在你的设备上。</p>
+        <p>Picora 没有用户账号、没有登录、没有服务器端存储。你创作的一切都保存在你的设备上。唯一离开设备的数据是 §3 所述的匿名使用统计。</p>
 
         <h3>你选择的照片</h3>
         <ul>
@@ -291,8 +297,14 @@
           </tbody>
         </table>
 
-        <h2>3. 第三方服务</h2>
-        <p>当前发布版本不含任何第三方 SDK——无广告、无统计、无崩溃上报。若未来版本引入此类服务，会在发布前更新本政策。</p>
+        <h2>3. 第三方服务 — Google Analytics for Firebase</h2>
+        <p>Picora 集成了 <strong>Google Analytics for Firebase</strong>（Google LLC），用于了解哪些功能被使用，以便把开发精力投入最重要的地方。</p>
+        <ul>
+          <li><strong>收集内容：</strong>匿名应用实例 ID、页面浏览（首页/编辑器/设置）、聚合事件（模板选择、导出保存、工具使用）与崩溃报告。</li>
+          <li><strong>不收集：</strong>照片或拼图内容、文件名、账号信息，以及用于广告的广告标识符。</li>
+          <li><strong>数据位置：</strong>由 Google 按 <a href="https://firebase.google.com/support/privacy">Firebase 隐私与安全</a> 条款处理。</li>
+          <li><strong>无广告：</strong>Analytics 配置为不启用广告个性化信号；应用内无广告 SDK。</li>
+        </ul>
 
         <h2>4. 儿童隐私</h2>
         <p>Picora 不会有意收集任何人的个人信息，包括 13 岁以下儿童。由于完全不收集数据，应用符合儿童隐私法规（COPPA、GDPR-K）。</p>
