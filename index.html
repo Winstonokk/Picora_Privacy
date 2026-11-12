@@ -194,10 +194,6 @@
         <span>·</span>
         <span data-i18n="product">Product: Picora for Android</span>
       </div>
-      <div class="lang" role="group" aria-label="Language">
-        <button type="button" id="btn-en" aria-pressed="true">English</button>
-        <button type="button" id="btn-zh" aria-pressed="false">中文</button>
-      </div>
     </header>
 
     <main class="card">
@@ -262,66 +258,6 @@
         <p>Developer: Winstonokk · <a href="https://github.com/Winstonokk/Picora_Privacy/issues">Open an issue on GitHub</a></p>
       </section>
 
-      <section id="panel-zh" class="panel" hidden>
-        <div class="callout">
-          <strong>本地优先设计：</strong>
-          你的照片与拼图作品完全在设备上处理，我们不会上传它们。应用使用 Google Analytics for Firebase（匿名使用统计）与 Google AdMob（广告服务）——绝不收集照片内容或任何可识别你个人身份的数据。
-        </div>
-
-        <h2>1. 我们收集的信息</h2>
-        <p>Picora 没有用户账号、没有登录、没有服务器端存储。你创作的一切都保存在你的设备上。唯一离开设备的数据是 §3 所述的匿名使用统计。</p>
-
-        <h3>你选择的照片</h3>
-        <ul>
-          <li>应用请求读取设备照片库的权限，以便你在应用内挑选照片用于拼图。</li>
-          <li>你选择的照片完全在你的设备上处理，不会被上传到任何地方。</li>
-          <li>我们不会访问或使用你未明确选择的照片。</li>
-        </ul>
-
-        <h3>你创作的拼图</h3>
-        <ul>
-          <li>导出的拼图通过系统 MediaStore 保存到设备相册（Pictures/Picora）。</li>
-          <li>它们只保存在你的设备上，我们无法访问。</li>
-        </ul>
-
-        <h2>2. 权限说明</h2>
-        <table>
-          <thead>
-            <tr><th>权限</th><th>用途</th></tr>
-          </thead>
-          <tbody>
-            <tr><td data-label="权限">READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE</td><td data-label="用途">在应用内选择器中展示你的照片库，供你挑选照片。</td></tr>
-            <tr><td data-label="权限">INTERNET</td><td data-label="用途">为未来功能预留。当前版本不发起任何网络请求。</td></tr>
-            <tr><td data-label="权限">CAMERA（可选）</td><td data-label="用途">如你选择，可在选择器的相机页直接拍摄新照片。</td></tr>
-          </tbody>
-        </table>
-
-        <h2>3. 第三方服务</h2>
-        <p>Picora 集成了两个 Google 服务（Google LLC），以保持应用免费：</p>
-        <ul>
-          <li><strong>Google Analytics for Firebase</strong> — 匿名使用统计：应用实例 ID、页面浏览（首页/编辑器/设置）、聚合事件（模板选择、导出保存、工具使用）与崩溃报告。绝不收集照片或拼图内容。Analytics 配置为不启用广告个性化信号。</li>
-          <li><strong>Google AdMob</strong> — 展示 Banner 广告（首页、编辑器）与可选激励视频（导出去水印）。AdMob 可能使用广告标识符等设备标识来投放和衡量广告；在你通过 Google 同意提示作出选择后，广告可能是个性化的。</li>
-        </ul>
-        <p>上述服务数据由 Google 按 <a href="https://firebase.google.com/support/privacy">Firebase 隐私与安全</a> 及 <a href="https://policies.google.com/technologies/ads">Google 广告政策</a> 处理。你可以在 系统设置 → Google → 广告 中重置广告标识符或关闭广告个性化。</p>
-
-        <h2>4. 儿童隐私</h2>
-        <p>Picora 不会有意收集任何人的个人信息，包括 13 岁以下儿童。由于完全不收集数据，应用符合儿童隐私法规（COPPA、GDPR-K）。</p>
-
-        <h2>5. 数据存储与保留</h2>
-        <p>所有数据（所选照片、导出的拼图、偏好设置）仅保存在你的设备上。卸载应用会移除其偏好设置；已导出的拼图仍会保留在相册中，除非你自行删除。</p>
-
-        <h2>6. 你的权利与选择</h2>
-        <ul>
-          <li>可随时在 系统设置 → 应用 → Picora → 权限 中撤销照片权限。应用会展示权限引导并保持可用。</li>
-          <li>可随时在相册应用中删除已导出的拼图。</li>
-        </ul>
-
-        <h2>7. 政策变更</h2>
-        <p>顶部的"最后更新"日期反映当前版本。重大变更会在 Google Play 的版本说明中突出显示。</p>
-
-        <h2>8. 联系我们</h2>
-        <p>开发者：Winstonokk · <a href="https://github.com/Winstonokk/Picora_Privacy/issues">在 GitHub 提交问题</a></p>
-      </section>
     </main>
 
     <footer>
@@ -329,29 +265,5 @@
     </footer>
   </div>
 
-  <script>
-    (function () {
-      var btnEn = document.getElementById('btn-en');
-      var btnZh = document.getElementById('btn-zh');
-      var panelEn = document.getElementById('panel-en');
-      var panelZh = document.getElementById('panel-zh');
-      function show(which) {
-        var en = which === 'en';
-        panelEn.hidden = !en;
-        panelZh.hidden = en;
-        btnEn.setAttribute('aria-pressed', en ? 'true' : 'false');
-        btnZh.setAttribute('aria-pressed', en ? 'false' : 'true');
-        try { localStorage.setItem('picora-privacy-lang', which); } catch (e) {}
-      }
-      btnEn.addEventListener('click', function () { show('en'); });
-      btnZh.addEventListener('click', function () { show('zh'); });
-      var saved = null;
-      try { saved = localStorage.getItem('picora-privacy-lang'); } catch (e) {}
-      if (!saved) {
-        saved = (navigator.language || '').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
-      }
-      show(saved);
-    })();
-  </script>
 </body>
 </html>
