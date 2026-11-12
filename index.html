@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Picora Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Picora — a fully offline local-first photo collage maker for Android." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --bg-accent: #fdeef1;
+      --ink: #222222;
+      --muted: #6d6d78;
+      --card: #ffffff;
+      --line: #e8eaee;
+      --accent: #fa4a6f;
+      --accent-deep: #e13a5f;
+      --accent-soft: #ffeef2;
+      --shadow: 0 18px 50px rgba(34, 34, 34, 0.08);
+      --radius: 18px;
+      --max: 760px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: "Inter", system-ui, sans-serif;
+      line-height: 1.65;
+      background:
+        radial-gradient(1200px 500px at 10% -10%, var(--bg-accent), transparent 55%),
+        radial-gradient(900px 420px at 100% 0%, #fdeef1, transparent 50%),
+        var(--bg);
+    }
+    .wrap {
+      width: min(var(--max), calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2.5rem 0 4rem;
+    }
+    header { margin-bottom: 1.75rem; }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+    .brand-mark {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 8px;
+      background: linear-gradient(145deg, #fa4a6f, #e13a5f);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      box-shadow: inset 0 0 0 2px rgba(255,255,255,0.25);
+    }
+    h1 {
+      font-family: "Sora", Georgia, serif;
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      line-height: 1.15;
+      margin: 0 0 0.75rem;
+      font-weight: 600;
+    }
+    .lede {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 40rem;
+      margin: 0;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      margin: 1.25rem 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .lang {
+      display: inline-flex;
+      padding: 0.25rem;
+      margin: 1.25rem 0 0;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(6px);
+    }
+    .lang button {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-weight: 500;
+      padding: 0.45rem 0.95rem;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+    .lang button[aria-pressed="true"] {
+      background: var(--accent);
+      color: #fff;
+    }
+    .card {
+      margin-top: 1.5rem;
+      background: var(--card);
+      border: 1px solid rgba(232, 234, 238, 0.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: clamp(1.25rem, 3vw, 2rem);
+    }
+    .panel[hidden] { display: none; }
+    h2 {
+      font-family: "Sora", Georgia, serif;
+      font-size: 1.25rem;
+      margin: 1.75rem 0 0.65rem;
+      font-weight: 600;
+    }
+    h2:first-child { margin-top: 0; }
+    p, li { color: var(--ink); }
+    ul { padding-left: 1.2rem; }
+    li + li { margin-top: 0.35rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.75rem 0 0.25rem;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border-top: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      padding: 0.7rem 0.55rem;
+    }
+    th {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .callout {
+      margin: 1rem 0 0;
+      padding: 0.95rem 1rem;
+      border-radius: 12px;
+      background: var(--accent-soft);
+      border: 1px solid #ffc9d5;
+    }
+    .callout strong { color: var(--accent-deep); }
+    a { color: var(--accent); }
+    footer {
+      margin-top: 1.75rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    @media (max-width: 640px) {
+      table, thead, tbody, th, td, tr { display: block; }
+      thead { display: none; }
+      tr { border-top: 1px solid var(--line); padding: 0.75rem 0; }
+      td { border: 0; padding: 0.15rem 0; }
+      td::before {
+        content: attr(data-label);
+        display: block;
+        color: var(--muted);
+        font-size: 0.78rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        margin-bottom: 0.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="https://github.com/Winstonokk" rel="noopener">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>Picora</span>
+      </a>
+      <h1 data-i18n="title">Privacy Policy</h1>
+      <p class="lede" data-i18n="lede">
+        Picora is a fully offline, local-first photo collage maker for Android. Your photos stay on your device. No account. No ads.
+      </p>
+      <div class="meta">
+        <span data-i18n="updated">Last updated: 12 November 2026</span>
+        <span>·</span>
+        <span data-i18n="product">Product: Picora for Android</span>
+      </div>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" id="btn-en" aria-pressed="true">English</button>
+        <button type="button" id="btn-zh" aria-pressed="false">中文</button>
+      </div>
+    </header>
+
+    <main class="card">
+      <section id="panel-en" class="panel">
+        <div class="callout">
+          <strong>Local-first by design:</strong>
+          Picora does not collect, store, or transmit any personal information to our servers. There is no backend, no analytics SDK, and no advertising SDK in the current release.
+        </div>
+
+        <h2>1. Information We Collect</h2>
+        <p>None. Picora has no user accounts, no sign-in, and no server-side storage. Everything you create stays on your device.</p>
+
+        <h3>Photos you select</h3>
+        <ul>
+          <li>The App requests read access to your device photo library so you can pick photos to include in a collage.</li>
+          <li>Photos you choose are processed entirely on your device and are never uploaded anywhere.</li>
+          <li>We do not access or use any photo you have not explicitly selected.</li>
+        </ul>
+
+        <h3>Collages you create</h3>
+        <ul>
+          <li>Exported collages are saved to your device gallery (<code>Pictures/Picora</code>) via the system MediaStore.</li>
+          <li>They remain on your device; we have no access to them.</li>
+        </ul>
+
+        <h2>2. Permissions</h2>
+        <table>
+          <thead>
+            <tr><th>Permission</th><th>Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr><td data-label="Permission">READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE</td><td data-label="Purpose">Display your photo library inside the in-app picker so you can choose photos.</td></tr>
+            <tr><td data-label="Permission">INTERNET</td><td data-label="Purpose">Reserved for future features. The current version makes no network requests.</td></tr>
+            <tr><td data-label="Permission">CAMERA (optional)</td><td data-label="Purpose">Take a new photo from the picker's Camera tab, if you choose.</td></tr>
+          </tbody>
+        </table>
+
+        <h2>3. Third-Party Services</h2>
+        <p>The current released version of Picora contains no third-party SDKs — no ads, no analytics, no crash reporting. If future versions introduce such services, this policy will be updated before that version is released.</p>
+
+        <h2>4. Children's Privacy</h2>
+        <p>Picora does not knowingly collect any personal information from anyone, including children under 13. Because no data is collected at all, the App is compliant with children's privacy regulations (COPPA, GDPR-K).</p>
+
+        <h2>5. Data Storage &amp; Retention</h2>
+        <p>All data (selected photos, exported collages, preferences) lives only on your device. Uninstalling the App removes its preferences; collages you exported remain in your gallery unless you delete them.</p>
+
+        <h2>6. Your Rights &amp; Choices</h2>
+        <ul>
+          <li>Revoke photo access anytime in Android Settings → Apps → Picora → Permissions. The App shows a permission guide and stays usable.</li>
+          <li>Delete exported collages from your gallery app at any time.</li>
+        </ul>
+
+        <h2>7. Changes to This Policy</h2>
+        <p>The "Last updated" date above reflects the current version. Material changes will be highlighted in the App's release notes on Google Play.</p>
+
+        <h2>8. Contact</h2>
+        <p>Developer: Winstonokk · <a href="https://github.com/Winstonokk/Picora_Privacy/issues">Open an issue on GitHub</a></p>
+      </section>
+
+      <section id="panel-zh" class="panel" hidden>
+        <div class="callout">
+          <strong>本地优先设计：</strong>
+          Picora 不收集、不存储、也不向我们的服务器传输任何个人信息。当前版本没有后端服务、没有统计 SDK、也没有广告 SDK。
+        </div>
+
+        <h2>1. 我们收集的信息</h2>
+        <p>无。Picora 没有用户账号、没有登录、没有服务器端存储。你创作的一切都保存在你的设备上。</p>
+
+        <h3>你选择的照片</h3>
+        <ul>
+          <li>应用请求读取设备照片库的权限，以便你在应用内挑选照片用于拼图。</li>
+          <li>你选择的照片完全在你的设备上处理，不会被上传到任何地方。</li>
+          <li>我们不会访问或使用你未明确选择的照片。</li>
+        </ul>
+
+        <h3>你创作的拼图</h3>
+        <ul>
+          <li>导出的拼图通过系统 MediaStore 保存到设备相册（Pictures/Picora）。</li>
+          <li>它们只保存在你的设备上，我们无法访问。</li>
+        </ul>
+
+        <h2>2. 权限说明</h2>
+        <table>
+          <thead>
+            <tr><th>权限</th><th>用途</th></tr>
+          </thead>
+          <tbody>
+            <tr><td data-label="权限">READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE</td><td data-label="用途">在应用内选择器中展示你的照片库，供你挑选照片。</td></tr>
+            <tr><td data-label="权限">INTERNET</td><td data-label="用途">为未来功能预留。当前版本不发起任何网络请求。</td></tr>
+            <tr><td data-label="权限">CAMERA（可选）</td><td data-label="用途">如你选择，可在选择器的相机页直接拍摄新照片。</td></tr>
+          </tbody>
+        </table>
+
+        <h2>3. 第三方服务</h2>
+        <p>当前发布版本不含任何第三方 SDK——无广告、无统计、无崩溃上报。若未来版本引入此类服务，会在发布前更新本政策。</p>
+
+        <h2>4. 儿童隐私</h2>
+        <p>Picora 不会有意收集任何人的个人信息，包括 13 岁以下儿童。由于完全不收集数据，应用符合儿童隐私法规（COPPA、GDPR-K）。</p>
+
+        <h2>5. 数据存储与保留</h2>
+        <p>所有数据（所选照片、导出的拼图、偏好设置）仅保存在你的设备上。卸载应用会移除其偏好设置；已导出的拼图仍会保留在相册中，除非你自行删除。</p>
+
+        <h2>6. 你的权利与选择</h2>
+        <ul>
+          <li>可随时在 系统设置 → 应用 → Picora → 权限 中撤销照片权限。应用会展示权限引导并保持可用。</li>
+          <li>可随时在相册应用中删除已导出的拼图。</li>
+        </ul>
+
+        <h2>7. 政策变更</h2>
+        <p>顶部的"最后更新"日期反映当前版本。重大变更会在 Google Play 的版本说明中突出显示。</p>
+
+        <h2>8. 联系我们</h2>
+        <p>开发者：Winstonokk · <a href="https://github.com/Winstonokk/Picora_Privacy/issues">在 GitHub 提交问题</a></p>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Winstonokk · <a href="https://github.com/Winstonokk/Picora_Privacy">github.com/Winstonokk/Picora_Privacy</a>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var btnEn = document.getElementById('btn-en');
+      var btnZh = document.getElementById('btn-zh');
+      var panelEn = document.getElementById('panel-en');
+      var panelZh = document.getElementById('panel-zh');
+      function show(which) {
+        var en = which === 'en';
+        panelEn.hidden = !en;
+        panelZh.hidden = en;
+        btnEn.setAttribute('aria-pressed', en ? 'true' : 'false');
+        btnZh.setAttribute('aria-pressed', en ? 'false' : 'true');
+        try { localStorage.setItem('picora-privacy-lang', which); } catch (e) {}
+      }
+      btnEn.addEventListener('click', function () { show('en'); });
+      btnZh.addEventListener('click', function () { show('zh'); });
+      var saved = null;
+      try { saved = localStorage.getItem('picora-privacy-lang'); } catch (e) {}
+      if (!saved) {
+        saved = (navigator.language || '').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+      }
+      show(saved);
+    })();
+  </script>
+</body>
+</html>
